@@ -58,9 +58,13 @@
 
                 if (has_simd)
                 {
+				console.log('has_simd');
+
+
                     if (has_threads)
                     {
                         nanodet_module_name = 'nanodet-simd-threads';
+								console.log('has_threads');
                     }
                     else
                     {
@@ -69,9 +73,11 @@
                 }
                 else
                 {
+							console.log('has_not_simd');
                     if (has_threads)
                     {
                         nanodet_module_name = 'nanodet-threads';
+							console.log('has_threads');
                     }
                     else
                     {
